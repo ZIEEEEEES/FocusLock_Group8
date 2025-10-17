@@ -11,51 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FocusLock_Application">
-        <activity
-            android:name=".parents_settasks"
-            android:exported="false" />
-        <activity
-            android:name=".settingsverify"
-            android:exported="false" />
-        <activity
-            android:name=".parent_setpoints"
-            android:exported="false" />
-        <activity
-            android:name=".completionlog"
-            android:exported="false" />
-        <activity
-            android:name=".parent_apps"
-            android:exported="false" />
-        <activity
-            android:name=".verification"
-            android:exported="false" />
-        <activity
-            android:name=".options"
-            android:exported="false" />
-        <activity
-            android:name=".leaderboards"
-            android:exported="false" />
-        <activity
-            android:name=".settings"
-            android:exported="false" />
-        <activity
-            android:name=".task"
-            android:exported="false" />
-        <activity
-            android:name=".appsontimeout"
-            android:exported="false" />
-        <activity
-            android:name=".signup"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+
+        <activity android:name=".Options" android:exported="true" />
+        <activity android:name=".Login" android:exported="true" />
+        <activity android:name=".Signup" android:exported="true" />
+        <activity android:name=".Verification" android:exported="true" />
+        <activity android:name=".AppsOnTimeout" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- other activities -->
+        <activity android:name=".parents_settasks" android:exported="false" />
+        <activity android:name=".SettingsVerify" android:exported="true" />
+        <activity android:name=".parent_setpoints" android:exported="false" />
+        <activity android:name=".completionlog" android:exported="false" />
+        <activity android:name=".parent_apps" android:exported="true" />
+        <activity android:name=".Leaderboards" android:exported="true" />
+        <activity android:name=".Settings" android:exported="false" />
+        <activity android:name=".Task" android:exported="true" />
+
     </application>
 
 </manifest>
