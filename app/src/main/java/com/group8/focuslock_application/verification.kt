@@ -22,7 +22,7 @@ class Verification : AppCompatActivity() {
         }
 
         // When proceed button is clicked, go to AppsOnTimeout
-        val proceedButton = findViewById<ImageButton>(R.id.proceedButton)
+        val proceedButton = findViewById<ImageButton>(R.id.proceedButton1)
         proceedButton.setOnClickListener {
             val intent = Intent(this, AppsOnTimeout::class.java)
             startActivity(intent)
