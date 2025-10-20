@@ -8,7 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-private val Signup.verification: Any
+class SignUp : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.signup_page)
+    }
+}
 
 class Signup : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +30,7 @@ class Signup : AppCompatActivity() {
         // Connect Signup → Verification
         val doneButton = findViewById<ImageButton>(R.id.doneButton)
         doneButton.setOnClickListener {
-            val intent = Intent(this, verification::class.java)
+            val intent = Intent(this, Verification::class.java)
             startActivity(intent)
         }
     }

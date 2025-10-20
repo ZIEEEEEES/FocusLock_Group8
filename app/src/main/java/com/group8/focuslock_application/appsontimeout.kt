@@ -8,25 +8,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-private val com.group8.focuslock_application.AppsOnTimeout.task: Any
-
 class AppsOnTimeout : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.appsontimeout_page)
 
-        // Handles edge-to-edge display
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        // Find a button that will proceed to Task page
         val tasksButton = findViewById<ImageButton>(R.id.imageButton3)
         tasksButton.setOnClickListener {
-            val intent = Intent(this, task::class.java)
+            val intent = Intent(this, Task::class.java)
             startActivity(intent)
         }
     }

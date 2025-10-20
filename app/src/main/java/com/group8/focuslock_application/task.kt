@@ -8,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-private val Task.leaderboards: Any
-
 class Task : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,10 +20,10 @@ class Task : AppCompatActivity() {
             insets
         }
 
-        //Connect to Leaderboards page
+        // Connect to Leaderboards page
         val leaderboardButton = findViewById<ImageButton>(R.id.imageButton4)
         leaderboardButton.setOnClickListener {
-            val intent = Intent(this, leaderboards::class.java)
+            val intent = Intent(this, Leaderboards::class.java)
             startActivity(intent)
         }
     }

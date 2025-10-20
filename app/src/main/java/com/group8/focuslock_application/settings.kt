@@ -26,7 +26,7 @@ class Settings : AppCompatActivity() {
             finish() // returns to previous activity
         }
 
-        // ⚙️ Settings Button (if you want to refresh same page)
+        // ⚙️ Settings Button (refresh same page)
         val settingsButton = findViewById<ImageButton>(R.id.imageButton1)
         settingsButton.setOnClickListener {
             val intent = Intent(this, Settings::class.java)
@@ -34,7 +34,7 @@ class Settings : AppCompatActivity() {
             finish()
         }
 
-        // 🏆 Leaderboards Button (if you have a Leaderboards activity)
+        // 🏆 Leaderboards Button
         val leaderboardsButton = findViewById<ImageButton>(R.id.imageButton4)
         leaderboardsButton.setOnClickListener {
             val intent = Intent(this, Leaderboards::class.java)
@@ -55,10 +55,10 @@ class Settings : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // 📋 Logs Button
+        // 📋 Logs Button → opens completionlog page
         val logsButton = findViewById<ImageButton>(R.id.imageButton7)
         logsButton.setOnClickListener {
-            val intent = Intent(this, LogsPage::class.java)
+            val intent = Intent(this, completionlog::class.java)
             startActivity(intent)
         }
     }
