@@ -1,5 +1,6 @@
 package com.group8.focuslock_application
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -9,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import android.widget.ImageButton
 
 class Settings : AppCompatActivity() {
+    @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,7 +23,7 @@ class Settings : AppCompatActivity() {
         }
 
         // 🔙 Back Button
-        val backButton = findViewById<ImageButton>(R.id.imageButton8)
+        val backButton = findViewById<ImageButton>(R.id.imageButton6)
         backButton.setOnClickListener {
             finish() // returns to previous activity
         }
@@ -58,7 +60,7 @@ class Settings : AppCompatActivity() {
         // 📋 Logs Button → opens completionlog page
         val logsButton = findViewById<ImageButton>(R.id.imageButton7)
         logsButton.setOnClickListener {
-            val intent = Intent(this, completionlog::class.java)
+            val intent = Intent(this, Completionlog::class.java)
             startActivity(intent)
         }
     }

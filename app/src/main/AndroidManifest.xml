@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -26,11 +25,11 @@
         </activity>
 
         <!-- other activities -->
-        <activity android:name=".parents_settasks" android:exported="false" />
+        <activity android:name=".ParentSetTasks" android:exported="false" />
         <activity android:name=".SettingsVerify" android:exported="true" />
-        <activity android:name=".parent_setpoints" android:exported="false" />
+        <activity android:name=".ParentSetPointsPage" android:exported="false" />
         <activity android:name=".completionlog" android:exported="false" />
-        <activity android:name=".parent_apps" android:exported="true" />
+        <activity android:name=".ParentAppPage" android:exported="true" />
         <activity android:name=".Leaderboards" android:exported="true" />
         <activity android:name=".Settings" android:exported="false" />
         <activity android:name=".Task" android:exported="true" />
