@@ -7,10 +7,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/verify1"
-    tools:context=".settingsverify">
+    tools:context=".Verification">
 
     <ImageButton
         android:id="@+id/imageButton1"
+        android:contentDescription="@string/apps_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -25,6 +26,7 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
+        android:contentDescription="@string/apps_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -39,6 +41,7 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
+        android:contentDescription="@string/apps_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -53,6 +56,7 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
+        android:contentDescription="@string/apps_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -67,6 +71,7 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
+        android:contentDescription="@string/apps_button"
         android:layout_width="344dp"
         android:layout_height="188dp"
         android:background="@null"

@@ -9,7 +9,8 @@
     android:background="@drawable/signup1">
 
     <ImageButton
-        android:id="@+id/doneButton"
+        android:id="@+id/doneButton1"
+        android:contentDescription="@string/apps_button"
         android:layout_width="338dp"
         android:layout_height="115dp"
         android:layout_marginBottom="152dp"
@@ -24,6 +25,7 @@
 
     <EditText
         android:id="@+id/editTextText2"
+        android:contentDescription="@string/apps_button"
         android:layout_width="288dp"
         android:layout_height="62dp"
         android:layout_marginTop="164dp"
@@ -32,7 +34,8 @@
         android:text="User"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
@@ -45,7 +48,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -60,5 +64,6 @@
         app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText,UnknownId" />
 </androidx.constraintlayout.widget.ConstraintLayout>

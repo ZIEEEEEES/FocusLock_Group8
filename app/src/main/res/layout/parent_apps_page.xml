@@ -8,12 +8,12 @@
     android:background="@drawable/apps2">
 
     <ImageButton
-        android:id="@+id/doneButton"
+        android:id="@+id/doneButton1"
         android:layout_width="338dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
         android:background="@null"
-        android:contentDescription="done_button"
+        android:contentDescription="@string/apps_button"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,8 @@
         app:srcCompat="@drawable/done_button" />
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/imageButton2"
+        android:contentDescription="@string/apps_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -38,7 +39,8 @@
         app:srcCompat="@drawable/settings_button" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imageButton3"
+        android:contentDescription="@string/apps_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"

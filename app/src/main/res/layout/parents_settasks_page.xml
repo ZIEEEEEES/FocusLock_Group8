@@ -9,7 +9,7 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageButton1"
         android:layout_width="273dp"
         android:layout_height="209dp"
         android:background="@null"
@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/tasks_button2" />
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/imageButton2"
         android:layout_width="273dp"
         android:layout_height="209dp"
         android:background="@null"
@@ -35,7 +35,7 @@
         app:srcCompat="@drawable/tasks_button2" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButton3"
         android:layout_width="273dp"
         android:layout_height="209dp"
         android:background="@null"
@@ -45,10 +45,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.708"
-        app:srcCompat="@drawable/tasks_button2" />
+        app:srcCompat="@drawable/tasks_button2"
+        tools:ignore="DuplicateIds" />
 
     <ImageButton
-        android:id="@+id/doneButton3"
+        android:id="@+id/doneButton4"
         android:layout_width="338dp"
         android:layout_height="115dp"
         android:layout_marginBottom="72dp"
@@ -62,7 +63,7 @@
         app:srcCompat="@drawable/setpoints_button" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButton5"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -76,7 +77,7 @@
         app:srcCompat="@drawable/backarrow_button1"/>
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imageButton6"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -90,7 +91,7 @@
         app:srcCompat="@drawable/options_button"/>
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/imageButton7"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -104,7 +105,7 @@
         app:srcCompat="@drawable/settings_button" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imageButton8"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
