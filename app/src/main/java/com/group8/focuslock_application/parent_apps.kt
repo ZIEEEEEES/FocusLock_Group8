@@ -26,7 +26,6 @@ class ParentAppPage : AppCompatActivity() {
         doneButton.setOnClickListener {
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
-            finish()
         }
     }
 }

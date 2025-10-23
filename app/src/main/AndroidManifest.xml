@@ -28,7 +28,7 @@
         <activity android:name=".ParentSetTasks" android:exported="false" />
         <activity android:name=".SettingsVerify" android:exported="true" />
         <activity android:name=".ParentSetPointsPage" android:exported="false" />
-        <activity android:name=".completionlog" android:exported="false" />
+        <activity android:name=".Completionlog" android:exported="false" />
         <activity android:name=".ParentAppPage" android:exported="true" />
         <activity android:name=".Leaderboards" android:exported="true" />
         <activity android:name=".Settings" android:exported="false" />
