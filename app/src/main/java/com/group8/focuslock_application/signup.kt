@@ -9,14 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class SignUp : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.signup_page)
-    }
-}
-
-class Signup : AppCompatActivity() {
+class Signup : AppCompatActivity() { // keep only ONE class, not two
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,8 +22,8 @@ class Signup : AppCompatActivity() {
             insets
         }
 
-        // Connect Signup → Verification
-        val doneButton = findViewById<ImageButton>(R.id.doneButton)
+        // ✅ Fixed: use correct button ID (doneButton1)
+        val doneButton = findViewById<ImageButton>(R.id.doneButton1)
         doneButton.setOnClickListener {
             val intent = Intent(this, Verification::class.java)
             startActivity(intent)

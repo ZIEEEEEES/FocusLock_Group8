@@ -6,4 +6,7 @@
     <string name="task_button">Task button</string>
     <string name="leaderboards_button">Leaderboards button</string>
     <string name="options_button">Options button</string>
+    <string name="done_button">Done</string>
+    <string name="backarrow_button1">Back</string>
+    <string name="tasks_button2">ParentTask</string>
 </resources>

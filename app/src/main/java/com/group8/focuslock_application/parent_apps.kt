@@ -3,7 +3,7 @@ package com.group8.focuslock_application
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,7 +22,8 @@ class ParentAppPage : AppCompatActivity() {
             insets
         }
 
-        val doneButton = findViewById<Button>(R.id.doneButton)
+        // ✅ Match the XML id "doneButton3"
+        val doneButton = findViewById<ImageButton>(R.id.doneButton3)
         doneButton.setOnClickListener {
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)

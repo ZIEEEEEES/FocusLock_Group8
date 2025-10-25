@@ -2,14 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@id/main"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/leaderboards1">
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/settings_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -39,7 +39,7 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/task_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -54,7 +54,7 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/leaderboards_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"

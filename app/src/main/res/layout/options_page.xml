@@ -2,70 +2,87 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/options1">
+    android:background="@drawable/options1"
+    tools:context=".Options">
 
-
+    <!-- Settings Button -->
     <ImageButton
         android:id="@+id/imageButton1"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/settings_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
         android:scaleType="fitCenter"
+        app:srcCompat="@drawable/settings_button"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.984"
-        app:srcCompat="@drawable/settings_button" />
+        app:layout_constraintVertical_bias="0.984" />
 
+    <!-- Leaderboards Button -->
     <ImageButton
         android:id="@+id/imageButton2"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/leaderboards_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
         android:scaleType="fitCenter"
+        app:srcCompat="@drawable/leaderboards_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.984"
-        app:srcCompat="@drawable/leaderboards_button" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Option Button 1 -->
     <ImageButton
         android:id="@+id/imageButton3"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/options_button_0"
         android:layout_width="273dp"
         android:layout_height="209dp"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/options_button0"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237"
-        app:srcCompat="@drawable/options_button0" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
 
+    <!-- Option Button 2 -->
     <ImageButton
         android:id="@+id/imageButton4"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/options_button_1"
         android:layout_width="273dp"
         android:layout_height="209dp"
         android:background="@null"
         android:scaleType="fitCenter"
+        app:srcCompat="@drawable/options_button1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <!-- Done Button -->
+    <ImageButton
+        android:id="@+id/doneButton"
+        android:contentDescription="@string/done_button"
+        android:layout_width="338dp"
+        android:layout_height="115dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/done_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637"
-        app:srcCompat="@drawable/options_button1" />
+        app:layout_constraintVertical_bias="0.9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

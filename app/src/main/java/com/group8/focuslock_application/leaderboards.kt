@@ -21,13 +21,31 @@ class Leaderboards : AppCompatActivity() {
             insets
         }
 
-        //  Find the Done button in leaderboards layout
-        val doneButton = findViewById<ImageButton>(R.id.imageButton4)
+        // 🔘 Buttons
+        val settingsButton = findViewById<ImageButton>(R.id.imageButton1)
+        val appsButton = findViewById<ImageButton>(R.id.imageButton2)
+        val tasksButton = findViewById<ImageButton>(R.id.imageButton3)
+        val leaderboardsButton = findViewById<ImageButton>(R.id.imageButton4)
 
-        //  When clicked, go to SettingsVerify page
-        doneButton.setOnClickListener {
-            val intent = Intent(this, SettingsVerify::class.java)
+        // 🧭 Navigation actions
+        settingsButton.setOnClickListener {
+            val intent = Intent(this, Settings::class.java)
             startActivity(intent)
+        }
+
+        appsButton.setOnClickListener {
+            val intent = Intent(this, AppsOnTimeout::class.java)
+            startActivity(intent)
+        }
+
+        tasksButton.setOnClickListener {
+            val intent = Intent(this, Task::class.java)
+            startActivity(intent)
+        }
+
+        // Optional: prevent reloading same page
+        leaderboardsButton.setOnClickListener {
+            // Already in Leaderboards — do nothing or refresh if desired
         }
     }
 }

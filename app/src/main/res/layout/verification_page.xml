@@ -10,7 +10,7 @@
     <!-- Proceed button -->
     <ImageButton
         android:id="@+id/proceedButton1"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/done_button"
         android:layout_width="338dp"
         android:layout_height="115dp"
         android:layout_marginBottom="292dp"

@@ -20,9 +20,30 @@ class AppsOnTimeout : AppCompatActivity() {
             insets
         }
 
+        // ✅ Image Buttons
+        val settingsButton = findViewById<ImageButton>(R.id.imageButton1)
+        val appsButton = findViewById<ImageButton>(R.id.imageButton2)
         val tasksButton = findViewById<ImageButton>(R.id.imageButton3)
+        val leaderboardButton = findViewById<ImageButton>(R.id.imageButton4)
+
+        // ✅ Click Listeners
+        settingsButton.setOnClickListener {
+            val intent = Intent(this, Settings::class.java)
+            startActivity(intent)
+        }
+
+        appsButton.setOnClickListener {
+            val intent = Intent(this, AppsOnTimeout::class.java)
+            startActivity(intent)
+        }
+
         tasksButton.setOnClickListener {
             val intent = Intent(this, Task::class.java)
+            startActivity(intent)
+        }
+
+        leaderboardButton.setOnClickListener {
+            val intent = Intent(this, Leaderboards::class.java)
             startActivity(intent)
         }
     }

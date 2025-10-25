@@ -14,18 +14,19 @@ class Verification : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.verification_page)
 
-        // Optional: adjust layout for system bars
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content)) { v, insets ->
+        // Adjust for system bars
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        // When proceed button is clicked, go to AppsOnTimeout
+        // Proceed button → AppsOnTimeout screen
         val proceedButton = findViewById<ImageButton>(R.id.proceedButton1)
         proceedButton.setOnClickListener {
             val intent = Intent(this, AppsOnTimeout::class.java)
             startActivity(intent)
+            finish() // optional: closes Verification screen
         }
     }
 }

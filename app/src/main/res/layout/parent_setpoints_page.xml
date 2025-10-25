@@ -2,84 +2,88 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tasks2">
+    android:background="@drawable/tasks2"
+    tools:context=".ParentSetPointsPage">
 
+    <!-- Done Button -->
     <ImageButton
         android:id="@+id/doneButton1"
-        android:contentDescription="@string/apps_button"
         android:layout_width="338dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
         android:background="@null"
+        android:contentDescription="@string/done_button"
         android:scaleType="fitCenter"
+        app:srcCompat="@drawable/done_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.878"
-        app:srcCompat="@drawable/done_button" />
+        app:layout_constraintVertical_bias="0.878" />
 
+    <!-- Back Arrow -->
     <ImageButton
         android:id="@+id/imageButton2"
-        android:contentDescription="@string/apps_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
+        android:contentDescription="@string/backarrow_button1"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backarrow_button1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/backarrow_button1"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintVertical_bias="0.023" />
 
+    <!-- Options Button -->
     <ImageButton
         android:id="@+id/imageButton3"
-        android:contentDescription="@string/apps_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
+        android:contentDescription="@string/options_button"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/options_button"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/options_button"/>
+        app:layout_constraintVertical_bias="0.023" />
 
+    <!-- Settings Button -->
     <ImageButton
         android:id="@+id/imageButton4"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/settings_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintVertical_bias="0.984"
         app:srcCompat="@drawable/settings_button" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/leaderboards_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintVertical_bias="0.984"
         app:srcCompat="@drawable/leaderboards_button" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

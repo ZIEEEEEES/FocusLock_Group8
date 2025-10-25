@@ -11,7 +11,7 @@
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/settings_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -26,7 +26,7 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/leaderboards_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -41,7 +41,7 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/apps_buttons2"
         android:layout_width="273dp"
         android:layout_height="209dp"
         android:background="@null"
@@ -55,7 +55,7 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/schedule_button2"
         android:layout_width="273dp"
         android:layout_height="209dp"
         android:background="@null"
@@ -69,7 +69,7 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/logs_button2"
         android:layout_width="273dp"
         android:layout_height="209dp"
         android:background="@null"
@@ -83,7 +83,7 @@
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/backarrow_button1"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"
@@ -98,7 +98,7 @@
 
     <ImageButton
         android:id="@+id/imageButton7"
-        android:contentDescription="@string/apps_button"
+        android:contentDescription="@string/options_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@null"

@@ -16,19 +16,20 @@ class Settings : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.settings_page)
 
+        // Handle insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        // 🔙 Back Button
+        // 🔙 Back Button (imageButton6)
         val backButton = findViewById<ImageButton>(R.id.imageButton6)
         backButton.setOnClickListener {
             finish() // returns to previous activity
         }
 
-        // ⚙️ Settings Button (refresh same page)
+        // ⚙️ Settings Button (imageButton1)
         val settingsButton = findViewById<ImageButton>(R.id.imageButton1)
         settingsButton.setOnClickListener {
             val intent = Intent(this, Settings::class.java)
@@ -36,31 +37,38 @@ class Settings : AppCompatActivity() {
             finish()
         }
 
-        // 🏆 Leaderboards Button
-        val leaderboardsButton = findViewById<ImageButton>(R.id.imageButton4)
+        // 🏆 Leaderboards Button (imageButton2)
+        val leaderboardsButton = findViewById<ImageButton>(R.id.imageButton2)
         leaderboardsButton.setOnClickListener {
             val intent = Intent(this, Leaderboards::class.java)
             startActivity(intent)
         }
 
-        // 📱 Apps Button
-        val appsButton = findViewById<ImageButton>(R.id.imageButton5)
+        // 📱 Apps Button (imageButton3)
+        val appsButton = findViewById<ImageButton>(R.id.imageButton3)
         appsButton.setOnClickListener {
             val intent = Intent(this, ParentAppPage::class.java)
             startActivity(intent)
         }
 
-        // 📅 Schedule Button
-        val scheduleButton = findViewById<ImageButton>(R.id.imageButton6)
+        // 📅 Schedule Button (imageButton4)
+        val scheduleButton = findViewById<ImageButton>(R.id.imageButton4)
         scheduleButton.setOnClickListener {
             val intent = Intent(this, ParentSetTasks::class.java)
             startActivity(intent)
         }
 
-        // 📋 Logs Button → opens completionlog page
-        val logsButton = findViewById<ImageButton>(R.id.imageButton7)
+        // 📋 Logs Button (imageButton5)
+        val logsButton = findViewById<ImageButton>(R.id.imageButton5)
         logsButton.setOnClickListener {
             val intent = Intent(this, Completionlog::class.java)
+            startActivity(intent)
+        }
+
+        // ⚙️ Options Button (imageButton7)
+        val optionsButton = findViewById<ImageButton>(R.id.imageButton7)
+        optionsButton.setOnClickListener {
+            val intent = Intent(this, SettingsVerify::class.java)
             startActivity(intent)
         }
     }
