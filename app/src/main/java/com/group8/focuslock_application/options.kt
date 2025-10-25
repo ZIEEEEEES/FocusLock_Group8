@@ -27,7 +27,7 @@ class Options : AppCompatActivity() {
         // ✅ Done Button → Go to SignUp page
         val doneButton = findViewById<ImageButton>(R.id.doneButton)
         doneButton.setOnClickListener {
-            val intent = Intent(this, SignUp::class.java)
+            val intent = Intent(this, Signup::class.java)
             startActivity(intent)
         }
 

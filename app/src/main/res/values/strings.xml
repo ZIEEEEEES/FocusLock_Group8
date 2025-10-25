@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">FocusLock</string>
-
+    <string name="options_button_0">Option 0</string>
+    <string name="options_button_1">Option 1</string>
+    <string name="apps_buttons2">Apps Button 2</string>
+    <string name="schedule_button2">Schedule Button 2</string>
+    <string name="logs_button2">Logs Button 2</string>
+    <string name="task_button1">Task Button 1</string>
     <string name="settings_button">Settings button</string>
     <string name="apps_button">Apps button</string>
     <string name="task_button">Task button</string>
